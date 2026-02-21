@@ -1,6 +1,6 @@
 // جدول الهدافين
 $.ajax({
-  url: "http://football-backend-production-8b1f.up.railway.app/laliga-topscorers",
+  url: "https://football-backend-production-8b1f.up.railway.app/laliga-topscorers",
   dataType: "json",
   type: "GET",
   success: function (data) {
@@ -30,7 +30,7 @@ function fetchTopScorers(data) {
 
 // جدول أقوى هجوم
 $.ajax({
-  url: "http://football-backend-production-8b1f.up.railway.app/laliga-attack",
+  url: "https://football-backend-production-8b1f.up.railway.app/laliga-attack",
   dataType: "json",
   type: "GET",
   success: function (data) {
@@ -57,7 +57,7 @@ function fetchBestAttack(data) {
 
 // اقوي دفاع
 $.ajax({
-  url: `http://football-backend-production-8b1f.up.railway.app/laliga-defense`,
+  url: `https://football-backend-production-8b1f.up.railway.app/laliga-defense`,
   dataType: "json",
   type: "GET",
   success: function (data) {
@@ -81,3 +81,4 @@ function fetchBestDefense(data) {
     $("#best-defense tbody").append(row);
   }
 }
+

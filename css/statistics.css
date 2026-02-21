@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 247, 251);
+}
+
+.container header nav {
+  background-color: #252149;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container header nav ul {
+  display: flex;
+  gap: 80px;
+}
+
+.container header nav ul li {
+  list-style: none;
+}
+
+.container header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* main content  */
+main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+main .box {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  text-align: right;
+}
+.side-box div:first-child {
+  margin-bottom: 10px;
+}
+h2 {
+  margin: 10px auto;
+  font-size: 35px;
+}
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+main .box .top-scorers{
+  max-height: 541px;
+}
+.table-wrapper {
+  max-height: 232px;
+  overflow-y: auto;
+}
+
+table thead th {
+  position: sticky;
+  font-size: 20px;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+/* الصفوف الزوجية */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* الصفوف الفردية */
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
